@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Dancing+Script:wght@600&display=swap');
+
+body {
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#ffd6e7,#e6ccff);
+    min-height:100vh;
+    color:#444;
+}
+
+/* TITLE */
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size:48px;
+    text-align:center;
+    margin-top:20px;
+    color:#ff4da6;
+}
+
+/* GLASS CARD */
+.section {
+    display:none;
+    width:85%;
+    max-width:500px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.35);
+    box-shadow:0 8px 30px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* BUTTONS */
+.menu {
+    text-align:center;
+}
+
+.menu button {
+    margin:8px;
+    padding:12px 18px;
+    border:none;
+    border-radius:30px;
+    background: linear-gradient(45deg,#ff66a3,#c77dff);
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu button:hover{
+    transform:scale(1.1);
+}
+
+/* INPUTS */
+input {
+    width:90%;
+    padding:10px;
+    margin:10px;
+    border-radius:12px;
+    border:none;
+}
+
+/* MEMORY CARD */
+.memory {
+    background:white;
+    border-radius:15px;
+    padding:10px;
+    margin:15px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.memory img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* PROGRESS BAR */
+.progress{
+    width:100%;
+    height:20px;
+    background:#eee;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+#bar{
+    height:100%;
+    background:linear-gradient(90deg,#ff4da6,#c77dff);
+    width:0%;
+    transition:1s;
+}
+
+/* FLOATING HEART */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:20px;
+    animation:floatUp 4s linear infinite;
+}
+
+@keyframes floatUp{
+    from{transform:translateY(0);opacity:1;}
+    to{transform:translateY(-800px);opacity:0;}
+}
+
+/* HIDE REAL INPUT */
+.upload-card input {
+    display:none;
+}
+
+/* UPLOAD CARD */
+.upload-card {
+    display:block;
+    width:90%;
+    margin:20px auto;
+    border-radius:20px;
+    padding:30px;
+    cursor:pointer;
+    background:rgba(255,255,255,0.4);
+    backdrop-filter:blur(15px);
+    border:2px dashed #ff66a3;
+    transition:0.4s;
+}
+
+.upload-card:hover{
+    transform:scale(1.03);
+    background:rgba(255,255,255,0.6);
+}
+
+.upload-content span{
+    font-size:40px;
+}
+
+.upload-content p{
+    margin-top:10px;
+    color:#ff3399;
+}
+
+/* IMAGE PREVIEW */
+#preview{
+    width:100%;
+    margin-top:15px;
+    border-radius:15px;
+    display:none;
+}
+
+/* SAVE BUTTON */
+.save-btn{
+    background:linear-gradient(45deg,#ff66a3,#c77dff);
+    border:none;
+    padding:12px 20px;
+    border-radius:25px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.save-btn:hover{
+    transform:scale(1.1);
+}
+
+
+/* existing styles above */
+
+.save-btn:hover{
+    transform:scale(1.1);
+}
+
+
+/* ✅ ADD THIS AT THE END */
+#preview{
+    animation: fadeIn 0.6s ease;
+}
+
